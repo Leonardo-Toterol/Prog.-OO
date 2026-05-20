@@ -60,6 +60,9 @@ public class UsuarioService {
         usuarios.get(indice).setUsername(IO.readln("Qual o username do cliente? "));
         usuarios.get(indice).setPassword(IO.readln("Qual a senha? "));
 
+
+        this.papelService.inicio(usuarios.get(indice));
+
     }
 
     public void remover(){
